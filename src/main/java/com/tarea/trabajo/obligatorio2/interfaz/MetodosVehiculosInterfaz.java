@@ -26,7 +26,7 @@ public interface MetodosVehiculosInterfaz {
      */
     void vehiculoOrdenadoMayorMenor(List<Vehiculo> listaVehiculos);
     /**
-     * Muestra los vehiculos ordenados de menor a mayor por precio
+     * Muestra los vehiculos ordenados naturalmente
      * @param listaVehiculos
      */
     void vehiculoOrdenadoNatural(List<Vehiculo> listaVehiculos);
