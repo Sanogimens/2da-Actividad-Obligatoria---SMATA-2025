@@ -12,13 +12,11 @@ public abstract class Vehiculo implements Comparable<Vehiculo> {
     
     @Override
     /**
-     * Método para comparar dos vehículos basado en su precio y, en caso de igualdad, en su marca y modelo.
+     * Utilizamos el método compareTo() de la clase String para comparar ambas representaciones.
      */
     public int compareTo(Vehiculo otroVehiculo) {
-        int comparacionPrecio = Double.compare(this.precio, otroVehiculo.getPrecio());
-        if (comparacionPrecio != 0) { // Si los precios son diferentes, se devuelve la comparación de precios.
-            return comparacionPrecio;
-        }
-        return (this.marca + this.modelo).compareTo(otroVehiculo.getMarca() + otroVehiculo.getModelo()); // Comparación alfabética por marca y modelo si los precios son iguales.
+        String vehiculoOriginal = this.marca + this.modelo + this.precio;
+        String vehiculoNuevo = otroVehiculo.marca + otroVehiculo.modelo + otroVehiculo.precio;
+        return vehiculoOriginal.compareTo(vehiculoNuevo);
     }
 }
