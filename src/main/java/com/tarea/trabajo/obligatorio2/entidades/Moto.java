@@ -1,9 +1,10 @@
 package com.tarea.trabajo.obligatorio2.entidades;
 
-import lombok.Getter;
 import java.text.DecimalFormat;
 
-@Getter // Genera los métodos get automáticamente
+import lombok.Getter;
+
+@Getter // Genera los métodos get automáticamente.
 public class Moto extends Vehiculo {
     private String cilindrada;
 
@@ -13,7 +14,7 @@ public class Moto extends Vehiculo {
     }
 
     /**
-     * Sobrescribo el método toString para respetar el formato de la consigna
+     * Sobrescribo el método toString para respetar el formato de la consigna.
      */
     @Override
     public String toString() {
